@@ -12,7 +12,9 @@
     "mocha-lcov-reporter": "^1.3.0",
     "nyc": "^15.1.0",
     "ts-node": "^9.1.1",
-    "typedoc": "^0.20.35"
+    "tsc": "^1.20150623.0",
+    "typedoc": "^0.20.35",
+    "typescript": "^4.2.4"
   },
   "name": "ull-esit-inf-dsi-20-21-prct08-filesystem-notes-app-alu0101105741",
   "description": "",
