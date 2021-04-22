@@ -4,4 +4,4 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: npm run coverage
+      - run: nyc npm test && nyc report --reporter=text-lcov | coveralls && rm -rf .nyc_output
