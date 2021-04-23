@@ -34,7 +34,7 @@ yargs.command({
         if (typeof argv.body === 'string') {
           if (typeof argv.color === 'string') {
             // const title = argv.title.toLowerCase().replace(/[^A-Za-z0-9]+(.)/g, (LowLine, chr) => chr.toUpperCase());
-            const path: string = './' + argv.user;
+            const path: string = './dist/' + argv.user;
             const notePath: string = path + '/' + argv.title + '.json';
             if (fs.existsSync(path)) {
               if (fs.existsSync(notePath)) {

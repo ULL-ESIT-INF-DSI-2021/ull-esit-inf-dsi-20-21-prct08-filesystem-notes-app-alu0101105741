@@ -23,7 +23,7 @@ export class Note {
 
   /**
    * asd
-   * @returns {string} asd
+   * @return {string} asd
    */
   write(): string {
     let json: string = '{\n';
