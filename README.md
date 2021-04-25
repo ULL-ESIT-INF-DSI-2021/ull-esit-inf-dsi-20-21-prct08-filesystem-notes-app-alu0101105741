@@ -1,7 +1,10 @@
 # Práctica 8 - Aplicación de procesamiento de notas de texto [![Coverage Status](https://coveralls.io/repos/github/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct08-filesystem-notes-app-alu0101105741/badge.svg?branch=main)](https://coveralls.io/github/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct08-filesystem-notes-app-alu0101105741?branch=main)
 
+__IMPORTANTE__: Para el correcto funcionamiento de la aplicación es necesario crear el directorio ./users en la raíz de trabajo, ya que hemos añadido dicha carpeta en el gitignore para que no se vean las notas creadas en la máquina local.
+
 # 1. Introducción
 En esta práctica llevaremos a cabo una aplicación de procesamiento de notas de texto, para ello utilizaremos varias herramientas como la [API síncrona de Node](https://nodejs.org/dist/latest-v15.x/docs/api/fs.html#fs_synchronous_api) que no ayudará a manejar con el sistema de ficheros para almacenar, editar, mostrar, leer o eliminar notas. Además sólo podremos interactuar con la aplicación desde la línea de comandos usando el paquete [yargs](https://www.npmjs.com/package/yargs) y se tendrá que mostrar las notas con su color correspondiente por la consola utilizando el paquete [chalk](https://www.npmjs.com/package/chalk), además tendremos que enviar mensajes informativos en verde y mensajes de error en rojo utilizando también dicho paquete.
+
 
 # 2. Objetivos
 Como hemos mencionado antes esta práctica tiene como objetivo realizar una aplicación de procesamiento de notas de texto que nos ayudará a familiarizarnos con la API síncrona de Node.js y los diferentes paquetes utilizados (yargs, chalk). Además tendremos que utilizar la herramienta de [GitHub Actions](https://docs.github.com/en/actions) para realizar flujos de trabajo que lleven a cabo las pruebas en diferentes entornos con diferentes versiones de Node.js, enviar los datos de cubrimiento a [Coveralls](https://coveralls.io/) y realizar un análisis de la calidad y seguridad de nuestro código fuente a través de [Sonar Cloud](https://sonarcloud.io/).
@@ -416,3 +419,5 @@ Como podemos ver, en el primer fichero contiene el archivo que nos facilita Sona
 
 # 4. Conclusiones
 Esta ha sido una práctica muy entretenida y que me ha ayudado a familiarizarme bastante con la API síncrona de Node.js y tambíen a otros paquetes como son chalk o yargs. Además me ha servido para aprender a utilizar la función de GitHub Actions y comprender como automatizar las tareas para que en cada push se ejecuten los pasos que queramos, también me ha ayudado para familiarizarme un poco más con las plataformas Coveralls y Sonar Cloud y así poder entender un poco mejor su funcionamiento. Por último, he de destacar que no he generado test para el programa principal ya que como se ejecuta por la línea de comandos no tenía muy claro como generarlos para comprobar que funcione todo correctamente, aun así, he probado todos los comandos a manos especificando diversas cosas manualmente para ver que el programa funcionaba correctamente, avisando de errores cuando se pedían notas inexistentes u otras variables.
+
+__IMPORTANTE__: Para el correcto funcionamiento de la aplicación es necesario crear el directorio ./users en la raíz de trabajo, ya que hemos añadido dicha carpeta en el gitignore para que no se vean las notas creadas en la máquina local.

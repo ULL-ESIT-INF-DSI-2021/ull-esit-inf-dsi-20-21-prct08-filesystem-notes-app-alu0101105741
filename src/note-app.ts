@@ -40,17 +40,21 @@ yargs.command({
             const filename = argv.title.toLowerCase().replace(/[^A-Za-z0-9]+(.)/g, (LowLine, chr) => chr.toUpperCase());
             const path: string = './users/' + argv.user;
             const notePath: string = path + '/' + filename + '.json';
-            if (fs.existsSync(path)) {
-              if (fs.existsSync(notePath)) {
-                console.log(chalk.red('Note title taken!'));
+            if (argv.color == 'red' || argv.color == 'green' || argv.color == 'blue' || argv.color == 'yellow' ) {
+              if (fs.existsSync(path)) {
+                if (fs.existsSync(notePath)) {
+                  console.log(chalk.red('Note title taken!'));
+                } else {
+                  fs.appendFileSync(notePath, new Note(argv.user, argv.title, argv.body, argv.color).write());
+                  console.log(chalk.green('New note added!'));
+                }
               } else {
+                fs.mkdirSync(path);
                 fs.appendFileSync(notePath, new Note(argv.user, argv.title, argv.body, argv.color).write());
                 console.log(chalk.green('New note added!'));
               }
             } else {
-              fs.mkdirSync(path);
-              fs.appendFileSync(notePath, new Note(argv.user, argv.title, argv.body, argv.color).write());
-              console.log(chalk.green('New note added!'));
+              console.log(chalk.red('The color is not valid!'));
             }
           }
         }
