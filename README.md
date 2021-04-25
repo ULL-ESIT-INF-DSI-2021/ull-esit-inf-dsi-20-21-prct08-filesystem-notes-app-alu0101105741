@@ -1,10 +1,10 @@
 # Práctica 8 - Aplicación de procesamiento de notas de texto [![Coverage Status](https://coveralls.io/repos/github/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct08-filesystem-notes-app-alu0101105741/badge.svg?branch=main)](https://coveralls.io/github/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct08-filesystem-notes-app-alu0101105741?branch=main)
 
 # 1. Introducción
-En esta práctica llevaremos a cabo una aplicación de procesamiento de notas de texto, para ello utilizaremos varias herramientas como la [API síncrona de Node](https://nodejs.org/dist/latest-v15.x/docs/api/fs.html#fs_synchronous_api) que no ayudará a manejar con el sistema de ficheros para almacenar, editar, mostrar, leer o eliminar notas. Además sólo podremos interactuar con la aplicación desde la línea de comandos usando el paquete [yargs]() y se tendrá que mostrar las notas con su color correspondiente por la consola utilizando el paquete [chalk](), además tendremos que enviar mensajes informativos en verde y mensajes de error en rojo utilizando también dicho paquete.
+En esta práctica llevaremos a cabo una aplicación de procesamiento de notas de texto, para ello utilizaremos varias herramientas como la [API síncrona de Node](https://nodejs.org/dist/latest-v15.x/docs/api/fs.html#fs_synchronous_api) que no ayudará a manejar con el sistema de ficheros para almacenar, editar, mostrar, leer o eliminar notas. Además sólo podremos interactuar con la aplicación desde la línea de comandos usando el paquete [yargs](https://www.npmjs.com/package/yargs) y se tendrá que mostrar las notas con su color correspondiente por la consola utilizando el paquete [chalk](https://www.npmjs.com/package/chalk), además tendremos que enviar mensajes informativos en verde y mensajes de error en rojo utilizando también dicho paquete.
 
 # 2. Objetivos
-Como hemos mencionado antes esta práctica tiene como objetivo realizar una aplicación de procesamiento de notas de texto que nos ayudará a familiarizarnos con la API síncrona de Node.js y los diferentes paquetes utilizados (yargs, chalk). Además tendremos que utilizar la herramienta de [GitHub Actions]() para realizar flujos de trabajo que lleven a cabo las pruebas en diferentes entornos con diferentes versiones de Node.js, enviar los datos de cubrimiento a [Coveralls]() y realizar un análisis de la calidad y seguridad de nuestro código fuente a través de [Sonar Cloud]().
+Como hemos mencionado antes esta práctica tiene como objetivo realizar una aplicación de procesamiento de notas de texto que nos ayudará a familiarizarnos con la API síncrona de Node.js y los diferentes paquetes utilizados (yargs, chalk). Además tendremos que utilizar la herramienta de [GitHub Actions](https://docs.github.com/en/actions) para realizar flujos de trabajo que lleven a cabo las pruebas en diferentes entornos con diferentes versiones de Node.js, enviar los datos de cubrimiento a [Coveralls](https://coveralls.io/) y realizar un análisis de la calidad y seguridad de nuestro código fuente a través de [Sonar Cloud](https://sonarcloud.io/).
 
 # 3. Realización de la práctica
 La realización de esta práctica podemos separarla en 2 puntos claramente diferenciados:
@@ -12,7 +12,7 @@ La realización de esta práctica podemos separarla en 2 puntos claramente difer
 2. Realización de los flujos de trabajo para GitHub Actions
 
 ## 3.1. Realización de la aplicación
-Para realizar la aplicación lo primero que tenemos que saber son los requisitos que debe cumplir dicha aplicación, para ello leeremos la [descripción de la tarea]() en la cual nos cuenta con más detalle dichos requisitos, pero resumidamente estos son:
+Para realizar la aplicación lo primero que tenemos que saber son los requisitos que debe cumplir dicha aplicación, para ello leeremos la [descripción de la tarea](https://ull-esit-inf-dsi-2021.github.io/prct08-filesystem-notes-app/) en la cual nos cuenta con más detalle dichos requisitos, pero resumidamente estos son:
 1. La aplicación nos permitirá que varios usuarios interactúen con ella, aunque no simultáneamente.
 2. Una nota estará formada por un título, un cuerpo y un color (rojo, verde, azul o amarillo).
 3. Cada usuario contará con su lista de notas en la cual podrá llevar a cabo estas operaciones:
