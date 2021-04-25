@@ -1,5 +1,5 @@
 /**
- * asd
+ * Class Note that helps us to manage the creation of the json file and the management of the data
  */
 export class Note {
   protected user: string;
@@ -8,11 +8,11 @@ export class Note {
   protected color: string;
 
   /**
-   * asd
-   * @param {string} user asd
-   * @param {string} title asd
-   * @param {string} body asd
-   * @param {string} color asd
+   * Constructor of Note class
+   * @param {string} user Note user
+   * @param {string} title Note title
+   * @param {string} body Note body
+   * @param {string} color Note color
    */
   constructor(user: string, title: string, body: string, color: string) {
     this.user = user;
@@ -22,8 +22,8 @@ export class Note {
   }
 
   /**
-   * asd
-   * @return {string} asd
+   * Write method that allow us to write a json of our class
+   * @return {string} String in json format that allow us to convert it into a real json
    */
   write(): string {
     let json: string = '{\n';
